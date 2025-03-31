@@ -1,0 +1,57 @@
+### 构建输出 ###
+/target/
+/build/
+!**.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/  # 多模块项目需要
+!**/src/test/**/target/
+
+### 依赖管理 ###
+/lib/
+*.jar
+*.war
+*.ear
+
+### IDE ###
+# 通用
+.DS_Store
+*.swp
+*.bak
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse/STS
+.settings/
+.project
+.classpath
+.factorypath
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### 日志 & 临时文件 ###
+*.log
+logs/
+tmp/
+*.tmp
+
+### 环境配置 ###
+# 排除所有环境配置（按需放开注释）
+#*.properties
+#*.yml
+#*.yaml
+
+# 但保留主配置文件（示例）
+!src/main/resources/application.yml
