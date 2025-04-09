@@ -41,6 +41,8 @@ public class SupplierInfo {
     private String note;  // 备注
 
     @Lob
+    @NotNull(message = "Qualification cannot be null")
+    @Size(max = 500, message = "Qualification must be less than 500 characters")
     private String qualification;  // 供应商资质（如果较复杂，可以考虑用 JSON）
 
     @NotNull(message = "Create time cannot be null")
@@ -58,4 +60,6 @@ public class SupplierInfo {
     @NotNull(message = "Deleted status cannot be null")
     @Column(nullable = false)
     private Boolean isDeleted = false;  // 是否已删除
+
+
 }

@@ -76,32 +76,10 @@
             <version>3.0.0</version>
         </dependency>
 
-        <!-- JUnit 5 依赖 -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.7.2</version> <!-- 使用 JUnit 5 最新稳定版本 -->
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.7.2</version> <!-- 使用 JUnit 5 最新稳定版本 -->
-            <scope>test</scope>
-        </dependency>
-
         <!-- Spring Boot Starter Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- JUnit 5 运行器支持 -->
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-runner</artifactId>
-            <version>1.7.2</version>
             <scope>test</scope>
         </dependency>
 

@@ -1,25 +1,25 @@
-package com.example.demo.controller;  // 如果使用 dto 包，可以修改为 com.example.demo.dto
+package com.example.demo.controller;
 
 public class RiskInfo {
-
     private String supplierCreditCode;
     private String companyName;
-    private String companyStatus;
-    private String legalRepresentative;
-    private String registrationDate;
+    private String status;
+    private String legalPerson;
+    private String establishmentDate;
     private String riskType;
-    private String riskDetail;
+    private String riskDescription;
     private String riskLevel;
 
-    public RiskInfo(String supplierCreditCode, String companyName, String companyStatus, String legalRepresentative,
-                    String registrationDate, String riskType, String riskDetail, String riskLevel) {
+    public RiskInfo(String supplierCreditCode, String companyName, String status,
+                    String legalPerson, String establishmentDate, String riskType,
+                    String riskDescription, String riskLevel) {
         this.supplierCreditCode = supplierCreditCode;
         this.companyName = companyName;
-        this.companyStatus = companyStatus;
-        this.legalRepresentative = legalRepresentative;
-        this.registrationDate = registrationDate;
+        this.status = status;
+        this.legalPerson = legalPerson;
+        this.establishmentDate = establishmentDate;
         this.riskType = riskType;
-        this.riskDetail = riskDetail;
+        this.riskDescription = riskDescription;
         this.riskLevel = riskLevel;
     }
 
@@ -40,28 +40,28 @@ public class RiskInfo {
         this.companyName = companyName;
     }
 
-    public String getCompanyStatus() {
-        return companyStatus;
+    public String getStatus() {
+        return status;
     }
 
-    public void setCompanyStatus(String companyStatus) {
-        this.companyStatus = companyStatus;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public String getLegalRepresentative() {
-        return legalRepresentative;
+    public String getLegalPerson() {
+        return legalPerson;
     }
 
-    public void setLegalRepresentative(String legalRepresentative) {
-        this.legalRepresentative = legalRepresentative;
+    public void setLegalPerson(String legalPerson) {
+        this.legalPerson = legalPerson;
     }
 
-    public String getRegistrationDate() {
-        return registrationDate;
+    public String getEstablishmentDate() {
+        return establishmentDate;
     }
 
-    public void setRegistrationDate(String registrationDate) {
-        this.registrationDate = registrationDate;
+    public void setEstablishmentDate(String establishmentDate) {
+        this.establishmentDate = establishmentDate;
     }
 
     public String getRiskType() {
@@ -72,12 +72,12 @@ public class RiskInfo {
         this.riskType = riskType;
     }
 
-    public String getRiskDetail() {
-        return riskDetail;
+    public String getRiskDescription() {
+        return riskDescription;
     }
 
-    public void setRiskDetail(String riskDetail) {
-        this.riskDetail = riskDetail;
+    public void setRiskDescription(String riskDescription) {
+        this.riskDescription = riskDescription;
     }
 
     public String getRiskLevel() {
@@ -88,3 +88,4 @@ public class RiskInfo {
         this.riskLevel = riskLevel;
     }
 }
+
